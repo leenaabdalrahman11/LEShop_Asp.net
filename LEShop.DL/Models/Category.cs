@@ -1,15 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace LEShop.DL.Models
+﻿namespace LEShop.PL.Models
 {
-    public class Category
+    public class Category: BaseModel
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-    
+        public List<CategoryTranslation>? Translations { get; set; }
     }
 }
